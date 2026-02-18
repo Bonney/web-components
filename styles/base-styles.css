@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "Prelude";
+    font-style: normal;
+    font-weight: normal;
+    src: url('/assets/fonts/Prelude/Prelude-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Prelude";
+    font-style: italic;
+    font-weight: normal;
+    src: url('/assets/fonts/Prelude/Prelude-MediumOblique.ttf');
+}
+
+@font-face {
+    font-family: "Prelude";
+    font-style: normal;
+    font-weight: bold;
+    src: url('/assets/fonts/Prelude/Prelude-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Prelude";
+    font-style: italic;
+    font-weight: bold;
+    src: url('/assets/fonts/Prelude/Prelude-BoldOblique.ttf');
+}
+
+/* Site Header */
+body > header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body > header > a {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+body > header > a > img {
+    width: 2.75em;
+    height: 2.75em;
+    border-radius: 0.85em;
+}
+
+body > header > nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, currentColor 30%, transparent);
+}
+
+a:hover {
+    text-decoration-color: color-mix(in srgb, currentColor 60%, transparent);
+}
+
+.blue {
+    color: var(--color-accent-blue);
+}
+
+.scarlet {
+    color: var(--color-accent-scarlet);
+}
+
+.green {
+    color: var(--color-accent-green);
+}
+
+.purple {
+    color: var(--color-accent-purple);
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    position: relative;
+
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1.25em;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: "Prelude", sans-serif;
+
+    max-width: 42em;
+}
+
+/* Sections */
+section {
+    padding: 1.5em 0;
+    border-bottom: 1px var(--color-border) solid;
+}
+
+section > h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color-text);
+    margin-bottom: 0.75em;
+}
+
+section > p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+}
+
+section > p:first-child {
+    font-size: 1.25em;
+}
+
+section > p:last-child {
+    margin-bottom: 0;
+}
+
+section > p > a {
+    color: inherit;
+}
+
+/* Project Lists */
+section > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section > ul > li {
+    display: flex;
+    gap: 0.5em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2.0em;
+    margin-bottom: 2.0em;
+}
+
+section > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+section > ul > li > img {
+    width: 3em;
+    height: 3em;
+    border-radius: 0.5em;
+}
+
+section > ul > li > h3 {
+    font-size: 1.25em;
+    margin: 0 0 0 0;
+    width: 100%;
+}
+
+section > ul > li > h3 > small {
+    font-size: 0.6em;
+    font-weight: bold;
+    background-color: var(--color-tag-bg);
+    color: var(--color-tag-text);
+    padding: 0.125em 0.5em;
+    border-radius: 0.75em;
+    margin-left: 0.25em;
+    vertical-align: 0.2em;
+}
+
+section > ul > li > p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 0.5em 0;
+    width: 100%;
+}
+
+section > ul > li > a {
+    font-size: 1em;
+}
+
+/* Footer */
+footer {
+    padding: 1.5em 0;
+}
+
+footer > p {
+    font-size: 0.75em;
+    color: var(--color-text-muted);
+}
+
+footer a {
+    color: var(--color-text-muted);
+}
